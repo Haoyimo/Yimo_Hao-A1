@@ -1,13 +1,13 @@
 public class GeneralPractitioner extends HealthProfessional {
-    private int id;             // 设置变量
+    private int id;             //Set variables
     private String name;        
     private int age;            
     private String certificate; 
     private String healthProfessionalDetails; 
 
-    // 构造函数
+    //Constructor function
     public GeneralPractitioner() {
-        super();  // 调用父类的默认构造函数
+        super();  //Call the default constructor of the parent class
         this.id = 0;            
         this.name = "";  
         this.age = 0;          
@@ -15,7 +15,7 @@ public class GeneralPractitioner extends HealthProfessional {
         this.healthProfessionalDetails = ""; 
     }
 
-    // 带参数的构造函数，初始化所有变量
+    //Constructor with parameters, initialize all variables
     public GeneralPractitioner(int id, String name, int age, String certificate, String healthProfessionalDetails) {
         super(id, name, age);  
         this.id = id;   
@@ -25,7 +25,7 @@ public class GeneralPractitioner extends HealthProfessional {
         this.healthProfessionalDetails = healthProfessionalDetails; 
     }
 
-    // 使用getter和setter来设置和获取变量
+    //Using Getters and Setters to Set and Retrieve Variables
     public String getCertificate() {
         return certificate;
     }
@@ -45,7 +45,7 @@ public class GeneralPractitioner extends HealthProfessional {
         this.healthProfessionalDetails = healthProfessionalDetails;
     }
 
-    // 打印结果
+    //Print results
     @Override
     public void printDetails() {
         System.out.println("ID: " + id);  
