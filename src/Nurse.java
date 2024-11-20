@@ -47,7 +47,6 @@ public class Nurse extends HealthProfessional {
     public void printDetails() {
         System.out.println("Health Professional Details: Nurse ");//详细信息的录入
         System.out.println("ID: " + id);  
-        System.out.println("ID: " + id);  
         System.out.println("Name: " + name);  
         System.out.println("Age: " + age);    
         System.out.println("Certificate: " + certificate);  // 输出护士的证书信息
