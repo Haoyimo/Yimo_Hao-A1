@@ -1,10 +1,10 @@
 public class Appointment {
-    private String patientName;// 设置变量
+    private String patientName;//Set variables
     private String patientPhone;
     private String appointmentTime; 
     private HealthProfessional healthProfessional; 
 
-    // 构造函数
+    //Constructor function
     public Appointment() {
         this.patientName = "";
         this.patientPhone = "";
@@ -12,7 +12,7 @@ public class Appointment {
         this.healthProfessional = null;
     }
 
-    // 初始化变量，构造第二函数
+    //Initialize variables and construct a second function
     public Appointment(String patientName, String patientPhone, String appointmentTime, HealthProfessional healthProfessional) {
         this.patientName = patientName;
         this.patientPhone = patientPhone;
@@ -20,7 +20,7 @@ public class Appointment {
         this.healthProfessional = healthProfessional; 
     }
 
-    // 打印变量
+    //Print variables
     public void printAppointmentDetails() {
         System.out.println("Patient Name: " + patientName);
         System.out.println("Patient Phone: " + patientPhone);
@@ -28,7 +28,7 @@ public class Appointment {
         System.out.println("Health Professional: " + (healthProfessional != null ? healthProfessional.getName() : "None"));
     }
 
-    // 使用getter和setter来设置和获取变量
+    //Using Getters and Setters to Set and Retrieve Variables
     public String getPatientName() {
         return patientName;
     }
