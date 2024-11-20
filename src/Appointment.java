@@ -1,34 +1,34 @@
 public class Appointment {
-    private String patientName;
+    private String patientName;// 设置变量
     private String patientPhone;
-    private String appointmentTime; // 更改为 appointmentTime
-    private HealthProfessional healthProfessional; // 更改为 healthProfessional
+    private String appointmentTime; 
+    private HealthProfessional healthProfessional; 
 
-    // 默认构造函数
+    // 构造函数
     public Appointment() {
         this.patientName = "";
         this.patientPhone = "";
-        this.appointmentTime = ""; // 更改为 appointmentTime
-        this.healthProfessional = null; // 更改为 healthProfessional
+        this.appointmentTime = ""; 
+        this.healthProfessional = null;
     }
 
-    // 第二个构造函数，用于初始化所有实例变量
+    // 初始化变量，构造第二函数
     public Appointment(String patientName, String patientPhone, String appointmentTime, HealthProfessional healthProfessional) {
         this.patientName = patientName;
         this.patientPhone = patientPhone;
-        this.appointmentTime = appointmentTime; // 更改为 appointmentTime
-        this.healthProfessional = healthProfessional; // 更改为 healthProfessional
+        this.appointmentTime = appointmentTime; 
+        this.healthProfessional = healthProfessional; 
     }
 
-    // 打印所有实例变量的方法
+    // 打印变量
     public void printAppointmentDetails() {
         System.out.println("Patient Name: " + patientName);
         System.out.println("Patient Phone: " + patientPhone);
-        System.out.println("Appointment Time: " + appointmentTime); // 更改为 appointmentTime
-        System.out.println("Health Professional: " + (healthProfessional != null ? healthProfessional.getName() : "None")); // 更改为 healthProfessional
+        System.out.println("Appointment Time: " + appointmentTime); 
+        System.out.println("Health Professional: " + (healthProfessional != null ? healthProfessional.getName() : "None"));
     }
 
-    // Getter 和 Setter 方法
+    // 使用getter和setter来设置和获取变量
     public String getPatientName() {
         return patientName;
     }
@@ -46,18 +46,18 @@ public class Appointment {
     }
 
     public String getAppointmentTime() {
-        return appointmentTime; // 更改为 appointmentTime
+        return appointmentTime; 
     }
 
     public void setAppointmentTime(String appointmentTime) {
-        this.appointmentTime = appointmentTime; // 更改为 appointmentTime
+        this.appointmentTime = appointmentTime; 
     }
 
     public HealthProfessional getHealthProfessional() {
-        return healthProfessional; // 更改为 healthProfessional
+        return healthProfessional; 
     }
 
     public void setHealthProfessional(HealthProfessional healthProfessional) {
-        this.healthProfessional = healthProfessional; // 更改为 healthProfessional
+        this.healthProfessional = healthProfessional; 
     }
 }
