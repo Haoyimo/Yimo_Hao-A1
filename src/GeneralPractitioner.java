@@ -49,7 +49,7 @@ public class GeneralPractitioner extends HealthProfessional {
         System.out.println("ID: " + id);  
         System.out.println("Name: " + name);  
         System.out.println("Age: " + age);    
-        System.out.println("Certificate: " + certificate);  // 输出护士的证书信息
+        System.out.println("Certificate: " + certificate);  // 输出医生的证书信息
     }
 }
 
