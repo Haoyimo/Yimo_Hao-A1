@@ -45,10 +45,11 @@ public class GeneralPractitioner extends HealthProfessional {
     // 打印医生的详细信息（覆盖父类的方法）
     @Override
     public void printDetails() {
-        System.out.println("ID: " + id);             // 打印ID
-        System.out.println("Name: " + name);         // 打印名称
-        System.out.println("Age: " + age);           // 打印年龄
-        System.out.println("Specialty: " + specialty);  // 打印专长
+        System.out.println("Health Professional Details: GeneralPractitioner ");//详细信息的录入
+        System.out.println("ID: " + id);  
+        System.out.println("Name: " + name);  
+        System.out.println("Age: " + age);    
+        System.out.println("Specialty: " + specialty);  
     }
 }
 
