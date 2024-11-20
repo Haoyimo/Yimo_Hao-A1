@@ -1,17 +1,16 @@
 public class HealthProfessional {
-    // 实例变量
-    private int id;          // ID，仅限数字
-    private String name;     // 名称
-    private int age;         // 年龄，替换了原来的 description 变量
+    private int id;          // 设置变量
+    private String name;    
+    private int age;        
 
-    // 默认构造函数
+    // 构造函数
     public HealthProfessional() {
         this.id = 0;
-        this.name = "Unknown";
-        this.age = 0; // 默认年龄为 0
+        this.name = "";
+        this.age = 0; 
     }
 
-    // 初始化所有实例变量的构造函数
+    // 初始化所有变量的构造函数
     public HealthProfessional(int id, String name, int age) {
         this.id = id;
         this.name = name;
@@ -22,10 +21,10 @@ public class HealthProfessional {
     public void printDetails() {
         System.out.println("ID: " + id);
         System.out.println("Name: " + name);
-        System.out.println("Age: " + age); // 输出年龄
+        System.out.println("Age: " + age);
     }
 
-    // Getter 和 Setter 方法
+    // 使用getter和setter来设置和获取变量
     public int getId() {
         return id;
     }
@@ -43,10 +42,10 @@ public class HealthProfessional {
     }
 
     public int getAge() {
-        return age; // 获取年龄
+        return age;
     }
 
     public void setAge(int age) {
-        this.age = age; // 设置年龄
+        this.age = age; 
     }
 }
