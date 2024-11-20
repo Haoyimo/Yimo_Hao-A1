@@ -28,16 +28,16 @@ public class AssignmentOne {
         ArrayList<Appointment> appointments = new ArrayList<>();
 
         // 创建预约
-        createAppointment(appointments, gp1, "John Doe", "1234567890", "2024-11-21 10:00");
-        createAppointment(appointments, gp3, "Jane Doe", "0987654321", "2024-11-22 11:00");
-        createAppointment(appointments, nurse1, "Tom Smith", "1122334455", "2024-11-23 09:00");
-        createAppointment(appointments, nurse2, "Alice Johnson", "2233445566", "2024-11-23 10:00");
+        createAppointment(appointments, gp1, "Kaisi", "15932099037", "2024-11-21 10:23");
+        createAppointment(appointments, gp3, "Bob", "13730557655", "2024-11-22 11:59");
+        createAppointment(appointments, nurse1, "Carl", "15933397668", "2024-11-24 09:14");
+        createAppointment(appointments, nurse2, "Mike", "13731579052", "2024-11-23 10:01");
 
         // 打印第一次的四个预约
         printExistingAppointments(appointments);
 
         // 取消其中一个预约
-        cancelBooking(appointments, "1122334455");
+        cancelBooking(appointments, "13730557655");
 
         // 打印取消后的结果
         System.out.println("\nUpdated Appointments:");
@@ -51,6 +51,7 @@ public class AssignmentOne {
         if (patientName != null && patientPhone != null && appointmentTime != null) {
             Appointment appointment = new Appointment( patientName, patientPhone,  appointmentTime,  healthProfessional);
             appointments.add(appointment);
+            System.out.println("Appointment successful, wish you a speedy recovery");
         } else {
             System.out.println("Error: Missing required information to create appointment.");
         }
@@ -81,6 +82,7 @@ public class AssignmentOne {
         if (toCancel != null) {
             appointments.remove(toCancel);
             System.out.println("Appointment cancelled for phone: " + patientPhone);
+            System.out.println("You have successfully cancelled the appointment");
         } else {
             System.out.println("Error: Appointment not found for the phone number " + patientPhone);
         }
