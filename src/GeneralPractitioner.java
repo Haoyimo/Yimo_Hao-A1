@@ -2,7 +2,7 @@ public class GeneralPractitioner extends HealthProfessional {
     private int id;             // 必需的实例变量：ID（仅限数字）
     private String name;        // 必需的实例变量：名称
     private int age;            // 与年龄相关的实例变量
-    private String specialty;   // 医生的专长领域
+    private String certificate;   // 医生的证书领域
 
     // 默认构造函数
     public GeneralPractitioner() {
@@ -10,16 +10,16 @@ public class GeneralPractitioner extends HealthProfessional {
         this.id = 0;             // 默认ID为0
         this.name = "Unknown";    // 默认名称为"Unknown"
         this.age = 0;            // 默认年龄为0
-        this.specialty = "General Practitioner";  // 默认专长为General Practitioner
+        this.certificate = "General Practitioner";  // 默认证书为General Practitioner
     }
 
     // 带参数的构造函数，初始化所有实例变量
-    public GeneralPractitioner(int id, String name, int age, String specialty) {
+    public GeneralPractitioner(int id, String name, int age, String certificate) {
         super(id, name, age);  // 调用父类的构造函数
         this.id = id;     // 初始化ID
         this.name = name; // 初始化名称
         this.age = age;   // 初始化年龄
-        this.specialty = specialty;  // 初始化专长
+        this.certificate = certificate;  // 初始化证书
     }
 
     // 获取医生的年龄
@@ -32,14 +32,14 @@ public class GeneralPractitioner extends HealthProfessional {
         this.age = age;
     }
 
-    // 获取医生的专长
-    public String getSpecialty() {
-        return specialty;
+    // 获取医生的证书
+    public String getCertificate() {
+        return certificate;
     }
 
-    // 设置医生的专长
-    public void setSpecialty(String specialty) {
-        this.specialty = specialty;
+    // 设置医生的证书
+    public void setCertificate(String certificate) {
+        this.certificate = certificate;
     }
 
     // 打印医生的详细信息（覆盖父类的方法）
@@ -49,7 +49,7 @@ public class GeneralPractitioner extends HealthProfessional {
         System.out.println("ID: " + id);  
         System.out.println("Name: " + name);  
         System.out.println("Age: " + age);    
-        System.out.println("Specialty: " + specialty);  
+        System.out.println("Certificate: " + certificate);  // 输出护士的证书信息
     }
 }
 
